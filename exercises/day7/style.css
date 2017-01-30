@@ -1,0 +1,48 @@
+.bigdiv{
+    text-align: center;
+    margin: 25px;
+    
+}
+.pink{
+    border: 5px solid white;
+    background: pink;
+    height: 50px;
+    width: 100%;
+  
+
+}
+*{
+    box-sizing: border-box;
+}
+.red{
+    border: 5px solid white;
+    background: red;
+    width: 25%;
+    height: 50px;
+    float: left;
+ 
+}
+
+.blue{
+    border: 5px solid white;
+    width: 50%;
+    height: 50px;
+    background: blue;
+   float: left;
+    
+}
+.green{
+    border: 5px solid white;
+    background: green;
+    width: 70%;
+    height: 50px;
+    float: left;
+}
+
+.orange{
+    border: 5px solid white;
+    background: orange;
+    height: 50px;
+    width: 30%;
+    float: left;
+}

@@ -1,0 +1,19 @@
+.red{
+    height: 100px;
+   
+    width: 100%;
+    border: 2px solid black;
+    
+}
+
+.blue{
+     height: 100px;
+    background-color: blue;
+    width: 100%;
+    
+}
+.line{
+   height: 2px;
+    width: 100%;
+    background-color: black;
+}

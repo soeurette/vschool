@@ -1,0 +1,15 @@
+h1{
+    text-align: center;
+    color:red;
+    background: yellow
+
+   }
+p {
+    display: inline-block;
+    color: aqua;
+    vertical-align: top;
+}
+img{
+    width: 150px;
+
+}

@@ -1,0 +1,32 @@
+.yellow {
+    background-color: yellow;
+    
+}
+p{
+    color: red;
+    font-family: jokerman
+    
+}
+.red {
+    background-color: red;
+    
+    text-align: center;
+    
+}
+.container-fluid {
+   padding: 0px !important;
+}
+.white {
+    background-color: white;
+    height: 150px;
+}
+.yellow2 {
+    background-color: yellow;
+   ;
+}
+.luigi {
+    padding: 15px;
+}
+.mashroom {
+    padding: 5px;
+}

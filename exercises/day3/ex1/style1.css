@@ -1,0 +1,35 @@
+.firstClass{
+    color: aqua;
+    border: 10px pink solid;
+    background-color:  mediumvioletred;
+    text-align: center;
+    font-size: 60px;
+    padding: 60px 20px 30px;
+        ;
+    margin: 20px 30px 40px 50px
+        
+}
+
+.amr{
+    color: red; 
+    font-size: 60px;
+    border: 20px pink dotted;
+    background-color:coral;
+    margin-top: 50px;
+    text-align: center;
+        
+    
+        
+}
+
+.sousou{
+    color: purple;
+    border: 5px red solid;
+    background-color: green;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 50px
+        
+        
+        
+}

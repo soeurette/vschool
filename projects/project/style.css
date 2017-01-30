@@ -1,0 +1,42 @@
+body {
+    background: url("big%20background.jpg") fixed;
+    background-size: cover;
+}
+img{
+    
+    margin: auto;
+    border: 5px solid pink;
+    border-radius: 5px;
+}
+p{
+    color: purple;
+    font-weight: bold;
+}
+input{
+    background-color: lightpink;
+    text-align: center;
+    color: blueviolet;
+}
+h3{
+    color: white;
+}
+.princessbox {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:200px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+}
+.princessdesign{
+    padding-bottom: 30px;
+}
+@media (max-width: 970px){
+    .princessbox{
+        width: 100%;
+    }
+}
+.result{
+    text-align: center;
+}

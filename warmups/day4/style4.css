@@ -1,0 +1,28 @@
+.f{ color: red;
+    background: yellow;
+    
+}
+
+
+.sousou a{
+    color: crimson;
+}
+
+
+#our.you {color: white;
+    background-color: black;
+font-size: 20px}
+#me .you{color: white;
+background-color: blue;
+font-size: 20px;}
+
+#id1 .nameClass{
+    color: white;
+    background-color: black;}
+#id2 .nameClass{
+    color: white;
+background-color: blue;
+}
+#id3 .nameClass{color: black;
+background-color: white;
+}
