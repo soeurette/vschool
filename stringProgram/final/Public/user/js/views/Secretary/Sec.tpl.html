@@ -1,0 +1,18 @@
+<div class="row rowone" ng-init="loadData()">
+
+</div>
+
+
+<div class="row"  ng-repeat="App in appointments track by $index">
+<div class="col-md-12">
+    <div class="jumbotron">
+         <h3 class="appname"> {{App.PatientName}}</h3>
+        <h5>  at {{App.time}} in {{App.departmentName}}</h5>
+        <h5> Reason for  {{App.reason}}</h5>
+    <button ng-click="delete(App._id)" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Cancel </button>
+<!--   <button ng-click="confirm(App._id,App.Approved)" class="btn btn-success"><span class="glyphicon glyphicon-pencil"></span> Confirm</button>-->
+    </div>
+   
+    
+</div>
+</div>

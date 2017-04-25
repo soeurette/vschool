@@ -1,0 +1,38 @@
+<div class="row rowone">
+
+</div>
+
+<div class="row adddep" ng-init="getdata()">
+    <div class="col-md-4">
+
+
+
+    </div>
+</div>
+<section id="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4" ng-repeat="dep in departments">
+                <ul class="project-wrapper wow animated fadeInUp">
+                    <li class="portfolio-item">
+                        <img src="../img/1.png" width="300px" height="350px" alt="null">
+                        <figcaption class="mask">
+
+                            <p> Doctor Name: {{dep.doctorName}}</p>
+                            <p> Speciality: {{dep.speciallity}}</p>
+                            <p>Floor: {{dep.floor}}</p>
+                        </figcaption>
+                        <ul class="external">
+                            <li><a class="fancybox" title="Departments" data-fancybox-group="works" href="/"><i class="fa fa-search"></i></a></li>
+                            <li>
+                                <h1> {{dep.departmentName}} </h1> </li>
+
+
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</section>

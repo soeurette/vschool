@@ -1,0 +1,42 @@
+<div class="container">
+
+<div class= "row" ng-init="loadData()">
+   
+<div class="row" ng-repeat="flower in flowershop track by $index" >
+<div class="col-md-6">
+    <hr/>
+<!--    <h1 id="usd">{{flower.name}} - USD {{flower.cost}}</h1> -->
+    <h1 id="flowername" style="text-align:left;float:left;">{{flower.name}}&nbsp;</h1> 
+    <h1 id="flowernames" style="text-align:left;float:left;">- USD&nbsp; </h1> 
+<h1 id="usd" style="text-align:left;float:left;">{{flower.cost}}</h1> 
+<hr style="clear:both;"/>
+<!--    <hr/>-->
+    
+    <button id="btn" ng-click="addtoCart()" class="btn btn-success" ><i class="fa fa-cart-arrow-down" style="font-size:48px;color:white"></i>&nbsp;&nbsp;Add to cart</button>
+    <img ng-src="flower.image" width="555px" height="350px">
+</div>
+    <div class="col-md-6">
+        <hr/>
+    <p id="descriptions"> Description </p>
+    <hr/>
+    <p id="description"> {{flower.description}}</p>
+        <hr/>
+<!--
+        <button ng-click="deleteFlower(flower._id)" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></button>
+        <button ng-click="toggleEdit($index)" class="btn btn-info">
+        <span class="glyphicon glyphicon-pencil"></span></button>
+-->
+    </div>
+<!--
+      <div ng-if="flower.isEdit">
+                    <input ng-model="flower.name">
+                    <input ng-model="flower.cost">
+                    <input ng-model="flower.description">
+                    <input ng-model="flower.image">
+                    <button class="btn" ng-click="save(flower._id,flower)">Save</button>
+
+                </div>
+-->
+    </div>
+    </div>
+</div>

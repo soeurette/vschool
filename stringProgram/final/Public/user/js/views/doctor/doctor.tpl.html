@@ -1,0 +1,115 @@
+<div class="row rowone" ng-init="loadData()">
+</div>
+<div class="row">
+    <div class="col-md-12" ng-repeat="App in appointments track by $index">
+        <h2> {{App.PatientName}}</h2>
+        <button ng-click="show($index)" class="btn btn-info">New Diagnoses</button>
+        <button ng-click="OldShow($index)" class="btn btn-success">Previous Diagnoses</button>
+        <div class="jumbotron doctors" ng-if="App.isEdit">
+            <div ng-repeat="App in appointments track by $index">
+                <div class="row">
+                    <div class="col-md-5 div-col-md-offset-1">
+                        <h3> Previous Medical History </h3>
+                        <p> Surgery :
+                            <input ng-model="App.Surgery" class="form-control">
+                        </p>
+                        <p> Disease :
+                            <input ng-model="App.Disease" class="form-control">
+                        </p>
+                        <p> Drugs :
+                            <input ng-model="App.Drugs" class="form-control">
+                        </p>
+                    </div>
+                    <div class="col-md-5 div-col-md-offset-1">
+                        <h3> Medical Presentation </h3>
+                        <p> Diagnoses :
+                            <input ng-model="App.Diagnoses" class="form-control">
+                        </p>
+                        <p> Treatment :
+                            <input ng-model="App.Treatment" class="form-control">
+                        </p>
+                        <p> Test :
+                            <input ng-model="App.Test" class="form-control">
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5 div-col-md-offset-1">
+                    <h3>  General Information </h3>
+                    <p> Temprature :
+                        <input ng-model="App.Temprature" class="form-control">
+                    </p>
+                    <p> Pressure :
+                        <input ng-model="App.Pressure" class="form-control">
+                    </p>
+                    <p> Weight :
+                        <input ng-model="App.Wieght" class="form-control">
+                    </p>
+                    <p> Smoker :
+                        <input ng-model="App.Smoker" class="form-control">
+                    </p>
+                    <p> Alcohol :
+                        <input ng-model="App.Alcohol" class="form-control">
+                    </p>
+                    <button class="btn btn-success" ng-click="save(App._id,App)">Add Diagnoses</button>
+                </div>
+                <div class="col-md-5 div-col-md-offset-1">
+                    <h3>  Data For Future </h3>
+                    <p> Next Visit :
+                        <input ng-model="App.NextVisit" class="form-control">
+                    </p>
+                    <p> Price :
+                        <input ng-model="App.Price" class="form-control">
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="jumbotron doctors" ng-if="App.isEdits">
+            <div ng-repeat="App in appointments track by $index">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3> Previous Medical History </h3>
+                        <p> Surgery : {{App.Surgery}} </p>
+                        <p> Disease : {{App.Disease}}
+                        </p>
+                        <p> Drugs : {{App.Drugs}}
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <h3> Medical Presentation </h3>
+                        <p> Diagnoses : {{App.Diagnoses}}
+                        </p>
+                        <p> Treatment : {{App.Treatment}}
+                        </p>
+                        <p> Test : {{App.Test}}
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>  General Information </h3>
+                        <p> Temprature : {{App.Temprature}}
+                        </p>
+                        <p> Pressure : {{ App.Pressure}}
+                        </p>
+                        <p> Weight : {{App.Wieght}}
+                        </p>
+                        <p> Smoker : {{App.Smoker}}
+                        </p>
+                        <p> Alcohol : {{App.Alcohol}}
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>  Data For Future </h3>
+                        <p> Next Visit : {{App.NextVisit}}
+                        </p>
+                        <p> Price : {{App.Price}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

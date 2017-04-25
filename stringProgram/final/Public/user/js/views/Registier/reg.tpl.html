@@ -1,0 +1,80 @@
+<div class="row fill">
+    <div class="col-md-12">
+        <h1> Registier Your data here</h1>
+        <p> please fill all the required data with a star</p>
+    </div>
+</div>
+<!--
+        <input class="form-control" ng-model="userInput.socialSecurityNumber" placeholder="Social Security Number ">
+        <input class="form-control" ng-model="userInput.address" placeholder="Address ">
+        <input class="form-control" ng-model="userInput.gender" placeholder="Gender ">
+-->
+
+<div class="main">
+    <div class="social-icons">
+        <div class="col_1_of_f span_1_of_f">
+            <a href="#">
+                <ul class='facebook'>
+                    <i class="fb"> </i>
+                    <li>Connect with Facebook</li>
+                    <div class='clear'> </div>
+                </ul>
+            </a>
+        </div>
+        <div class="col_1_of_f span_1_of_f">
+            <a href="#">
+                <ul class='twitter'>
+                    <i class="tw"> </i>
+                    <li>Connect with Twitter</li>
+                    <div class='clear'> </div>
+                </ul>
+            </a>
+        </div>
+        <div class="clear"> </div>
+    </div>
+    <h2>Or Signup with</h2>
+    <form>
+        <div class="lable">
+            <div class="col_1_of_2 span_1_of_2">
+                <input ng-model="userInput.userName" type="text" class="text" placeholder="User Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'User Name';}" id="active">
+            </div>
+            <div class="col_1_of_2 span_1_of_2">
+                <input ng-model="userInput.phoneNumber" type="text" class="text" placeholder="Phone Number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone Number';}">
+            </div>
+            <div class="clear"> </div>
+        </div>
+        <div class="lable">
+            <div class="col_1_of_2 span_1_of_2">
+                <input type="text" ng-model="userInput.firstName" class="text" placeholder="First Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'First Name';}" id="active">
+            </div>
+            <div class="col_1_of_2 span_1_of_2">
+                <input type="text" class="text" ng-model="userInput.lastName" placeholder="Last Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Last Name';}">
+            </div>
+            <div class="clear"> </div>
+        </div>
+        <div class="lable">
+            <div class="col_1_of_2 span_1_of_2">
+                <input type="text" ng-model="userInput.socialSecurityNumber" class="text" placeholder="social Security Number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'social Security Number';}" id="active">
+            </div>
+            <div class="col_1_of_2 span_1_of_2">
+                <input type="text" class="text" ng-model="userInput.address" placeholder="Adress" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Adress';}">
+            </div>
+            <div class="clear"> </div>
+        </div>
+        <div class="lable">
+            <div class="col_1_of_2 span_1_of_2">
+                <input type="text" ng-model="userInput.gender" class="text" placeholder="gender" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'gender';}" id="active">
+            </div>
+            <div class="clear"> </div>
+        </div>
+        <div class="lable-2">
+            <input type="text" class="text" ng-model="userInput.email" value="your@email.com " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'your@email.com ';}">
+            <input type="password" ng-model="userInput.Password" class="text" value="Password " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password ';}">
+        </div>
+        <div class="submit">
+            <button ng-click="submit()" class="btn btn-info signUpbtn">Sign Up</button>
+        </div>
+        <div class="clear"> </div>
+    </form>
+    <!-----//end-main---->
+</div>

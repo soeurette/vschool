@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Soeurette Website</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+    
+   
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     <link href="./css/style.css" rel="stylesheet" type="text/css" />
+   
+
+   
+</head>
+
+<body ng-app="app">
+    <div id="header">
+        <ul>
+
+              <li class="selected"  ><a href="/#/home"><i class="fa fa-home" aria-hidden="true"></i> home</a></li>
+            <li class="selected" ><a href="/#/Services"><i  class="glyphicon glyphicon-leaf" aria-hidden="true"></i> our flowers</a></li>
+            <li class="selected" ><a href="/#/Delivery"><i class="fa fa-cc-visa" aria-hidden="true"></i> Delivery </a></li>
+            <li class="selected" ><a href="/#/shop"><i class="fa fa-shopping-bag" aria-hidden="true"></i> Shop</a></li>
+            <li id="padding" class="selected" ><a href="/#/cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart</a></li>
+<!--
+              
+            <li ><a href="/#/signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+-->
+            <li class="selected" ><a href="/#/signin"><span class="glyphicon glyphicon-log-in"></span> Sign In</a></li>
+             <li class="selected" ><a href="/#/Contact"><i class="fa fa-comments" aria-hidden="true"></i> contact us</a></li>
+
+        </ul>
+<!--
+      <div class="logo">
+            <a ><img src="images/logo.gif" alt="" /></a>
+        </div>
+-->
+         <div class="logo">
+            <a ><img src="/images/logo.jpg" alt="" width=630px heigth=180px/></a>
+        </div>
+    </div>
+
+    <ng-view></ng-view>
+    <div id="footer">
+        <div class="row">
+            <div class="col-md-12">
+            <div class="connect">
+                <h4>Follow us:</h4>
+                <ul>
+                    <li class="facebook"><a href="#">facebook</a></li>
+                    <li class="twitter"><a href="#">twitter</a></li>
+                      
+                </ul>
+            </div>
+            <p>Copyright &copy; <a href="#">By Soeurette El Kurdy</a> - All Rights Reserved | 2017 <a target="_blank" href="#"></a></p>
+        </div>
+            </div>
+        
+    </div>
+ 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-route.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/views/flowers/services.js"></script>
+    <script src="/js/views/delivery/delivery.js"></script>
+    <script src="/js/views/home/home.js"></script>
+    <script src="/js/views/contactus/contact.js"></script>
+    <script src="/js/services/tokenmodule.js"></script>
+    <script src="/js/services/requestService.js"></script>
+    <script src="/js/services/authService.js"></script>
+    <script src="/js/views/admin/admin.js"></script>
+    <script src="/js/services/auth.js"></script>
+    <script src="/js/views/shop/shop.js"></script>
+    <script src="/js/views/cart/cart.js"></script>
+    <script src="/js/app.signin.js"></script>
+    <script src="/js/app.signup.js"></script>
+    <script src="/js/angular-file-upload.js"></script>
+
+<!--    <script src="/js/views/adminflower/admin.js"></script>-->
+</body>
+
+</html>

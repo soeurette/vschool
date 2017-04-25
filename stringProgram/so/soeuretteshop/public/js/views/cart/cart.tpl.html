@@ -1,0 +1,78 @@
+
+<div id="emptyrows">
+</div>
+<div class="row" ng-init="getData()">
+     <div class="container fluid">
+<div class="col-md-6">
+
+    <form>
+  <div class="form-group">
+
+      <div class="input-group">
+          <span class="input-group-addon transparent"><span class="glyphicon glyphicon-user"></span></span>
+             <input ng-model="userInput.Reciever" class="form-control left-border-none" placeholder="The One you like to send For" type="text" class="form-control">
+      </div>
+
+  </div>
+</form><br>
+  
+  
+   <form>
+  <div class="form-group">
+
+      <div class="input-group">
+          <span class="input-group-addon transparent"><span class="glyphicon glyphicon-home"></span></span>
+              <input ng-model="userInput.adress" class="form-control left-border-none"placeholder="Address"  type="text" class="form-control">
+      </div>
+
+  </div>
+</form><br>
+    
+
+    
+     <form>
+  <div class="form-group">
+
+      <div class="input-group">
+          <span class="input-group-addon transparent"><span class="glyphicon glyphicon-phone"></span></span>
+               <input ng-model="userInput.telephone" class="form-control left-border-none" placeholder="Telephone"  type="text"class="form-control">
+      </div>
+
+  </div>
+</form><br>
+    
+
+       
+    <form>
+  <div class="form-group">
+
+      <div class="input-group">
+          <span class="input-group-addon transparent"><span class="fa fa-sort-numeric-asc"></span></span>
+             <input ng-model="userInput.payment" class="form-control left-border-none"placeholder=  " Quantity" class="form-control">
+      </div>
+
+  </div>
+</form><br>
+
+
+    <button ng-click="addtocart()" class="btn btn-info">Confirm</button><br>
+</div>
+
+<div class="row">
+<div class="col-md-4" ng-repeat="money in Cart track by $index">
+        <p>{{money.username}}</p>
+        <p>{{money.payment}}</p>
+        <p>{{money.adress}}</p>
+        <p>{{money.telephone}}</p>
+    <p ng-if="priv == 'admin'">Account: {{item.username}}</p>
+    <button ng-click="delete(money._id)"><span class="glyphicon glyphicon-trash"></span> </button>
+</div>
+    </div>
+    </div>
+</div>
+
+
+<div id="emptyrows">
+</div>
+
+

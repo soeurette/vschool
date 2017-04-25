@@ -1,0 +1,42 @@
+<div id="emptyrows">
+</div>
+<div ng-init="loadData()"></div>
+<div class="row">
+<div class="col-md-6 col-md-offset-3">
+    <input ng-model="userInput.name" placeholder="flower name" class="form-control">
+        <input ng-model="userInput.cost" placeholder="flower cost" class="form-control">
+        <input ng-model="userInput.image" placeholder="flower image" class="form-control" type="file">
+        <input ng-model="userInput.description" placeholder="flower description" class="form-control">
+    <button ng-click="postFlower()" class="btn btn-imfo">Post</button>
+    </div>
+<div class="col-md-3">
+</div>
+    </div>
+<div class="row" ng-repeat="flower in flowershop track by $index" >
+<div class="col-md-6">
+    <hr/>
+    <h1>{{flower.name}} - USD {{flower.cost}}</h1> 
+    <hr/>
+    <button id="btn" ng-click="addtoCart()" class="btn btn-success" ><i class="fa fa-cart-arrow-down" style="font-size:48px;color:#EC407A"></i>&nbsp;&nbsp;Add to cart</button>
+</div>
+    <div class="col-md-6">
+        <hr/>
+    <p id="description"> Description </p>
+    <hr/>
+    <p id="description"> {{flower.description}}</p>
+        <hr/>
+        <button ng-click="deleteFlower(flower._id)" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></button>
+        <button ng-click="toggleEdit($index)" class="btn btn-info">
+        <span class="glyphicon glyphicon-pencil"></span></button>
+    </div>
+      <div ng-if="flower.isEdit">
+                    <input ng-model="flower.name">
+                    <input ng-model="flower.cost">
+                    <input ng-model="flower.description">
+                    <input ng-model="flower.image">
+                    <button class="btn" ng-click="save(flower._id,flower)">Save</button>
+
+                </div>
+    </div>
+<div id="emptyrows">
+</div>

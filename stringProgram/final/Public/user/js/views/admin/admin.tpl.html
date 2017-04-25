@@ -1,0 +1,40 @@
+<div class="row rowone">
+
+</div>
+<div class="row" ng-init="getdata()">
+    <div class="col-md-6 col-md-offset-3">
+
+        <button ng-click="showComplex()">Sign In</button>
+
+    </div>
+</div>
+
+<section>
+    <div class="row adddep">
+        <div class="col-md-6 col-md-offset-3">
+            <input class="form-control" ng-model="userInput.departmentName" placeholder="Department">
+            <input class="form-control" ng-model="userInput.doctorName" placeholder="Doctor Name">
+            <input class="form-control" ng-model="userInput.speciallity" placeholder="speciallity">
+            <input class="form-control" ng-model="userInput.floor" placeholder="Floor">
+            <button ng-click="AdddepBtn()" class="btn btn-info">Add department</button>
+            <button ng-click="show()" class="btn btn-success"> Show Dep</button>
+        </div>
+    </div>
+    <div class="row" ng-if="clicked">
+        <div class="col-md-4" ng-repeat="dep in departments track by $index">
+            {{dep.departmentName}}
+            <button ng-click="delete(dep._id)" class="btn btn-Danger"> <span class="glyphicon glyphicon-remove"></span> </button>
+            <button ng-click="toggleEdit($index)" class="btn btn-success"><span class="glyphicon glyphicon-pencil"></span></button>
+            <div ng-if="dep.isEdit">
+                <input ng-model="dep.departmentName">
+                <input ng-model="dep.doctorName" class="form-control">
+                <input ng-model="dep.speciallity" class="form-control">
+                <input ng-model="dep.floor" class="form-control">
+                <button ng-click="save(dep._id,dep)" class="btn btn-info">Save</button>
+
+            </div>
+        </div>
+
+    </div>
+
+</section>
