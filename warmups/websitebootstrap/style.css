@@ -1,0 +1,62 @@
+body {
+    background-color: #246A82;
+}
+
+.nav navbar-nav {
+    background-color: #72B9D7;
+}
+
+#bleu {
+    background-color: #44C5C7;
+    height: 200px;
+}
+
+#yellow {
+    background-color: #EECF69;
+    height: 250px;
+}
+
+#red {
+    background-color: #EB7F5C;
+    height: 200px;
+}
+
+#green {
+    background-color: #6BD3A5;
+    height: 40px;
+}
+
+#darkbleu {
+    background-color: #72B9D7;
+    height: 20px;
+}
+
+#white {
+    background-color: #FFFFFF;
+    height: 50px;
+}
+
+#white2 {
+    background-color: #FFFFFF;
+    height: 200px;
+}
+
+#red2 {
+    background-color: #EB7F5C;
+    height: 50px;
+}
+
+#bleu2 {
+    background-color: #44C5C7;
+    height: 50px;
+}
+
+#yellow2 {
+    background-color: #EECF69;
+    height: 50px;
+}
+
+#green2 {
+    background-color: #6BD3A5;
+    height: 200px;
+}

@@ -1,0 +1,215 @@
+    body {
+        background: url("") fixed;
+        background-size: cover;
+        background-color: #E3F2FD;
+        box-sizing: border-box;
+    }
+    /*
+.sticky-menu__item {
+    display: inline-block;
+    min-width: 100px;
+    margin: 0 10px;
+    height: 96px;
+}
+*/
+    
+    .sticky-menu__item {
+        display: inline-block;
+        min-width: 50px !important;
+        margin: 0 10px;
+        height: 50px !important;
+    }
+    
+    span {
+        font-size: 30px !important;
+        font-family: 'Niconne', cursive;
+        /*    font-family: 'Press Start 2P', cursive;*/
+        /*    font-family: 'Fredericka the Great',
+ cursive;*/
+    }
+    
+    #pre1 {
+        padding-top: 40px;
+        text-align: center;
+        color: #CE93D8;
+        font-size: 50px;
+        /*    font-family: 'Clicker Script', cursive;*/
+        /*    font-family: 'Cookie',
+ cursive;*/
+        /*    font-family: 'Tangerine', cursive;*/
+        /*    font-family: 'Rochester',
+cursive;*/
+        font-family: 'Monoton', cursive !important;
+        /*    font-family: 'Niconne', cursive;*/
+        /*    font-family: 'Press Start 2P', cursive;*/
+        background-color: transparent;
+        border-color: transparent;
+    }
+    
+    #pre2 {
+        padding-top: 10px;
+        text-align: center;
+        color: #4A148C;
+        font-size: 30px;
+        background-color: transparent;
+        border-color: transparent;
+        font-family: 'Tangerine', cursive;
+    }
+    
+    img {
+        padding-top: 30px;
+        padding-left: 40px
+    }
+    
+    .sticky-menu__title {
+        margin: 10px 0 0;
+        display: block;
+        text-align: center
+    }
+    
+    .glyphicon glyphicon-thumbs-down {
+        font-size: 20px;
+        padding-right: 5px
+    }
+    /*
+    img {
+        height: 15em;
+        margin: auto;
+        border: 5px solid pink;
+        border-radius: 5px;
+    }
+*/
+    /*
+    button {
+      transition: background 2s ease;
+      transition: font-size 1s linear;
+      transition: border-radius 3s ease;
+      margin-top: 20px !important;
+      transition: color 1s ease-out;
+  }
+*/
+    /*
+button:hover {
+    border-radius: 30%;
+    background-color: palegreen !important;
+    color: deeppink !important;
+}
+*/
+    
+    @media (max-width: 970px) {}
+    
+    #name {
+        padding-bottom: 30px;
+    }
+    
+    #description {
+        padding-bottom: 30px;
+    }
+    
+    #btncomment:hover {
+        font-weight: bold;
+        transition: background 2s ease;
+        transition: font-size 1s linear;
+        transition: border-radius 3s ease;
+        /*        margin-top: 20px !important;*/
+        transition: color 1s ease-out;
+    }
+    
+    #btn {
+        /*        font-family: 'Barrio',
+  cursive;*/
+        font-family: 'Cabin Sketch', cursive;
+        font-size: 20px;
+        transition: background 2s ease;
+        transition: font-size 1s linear;
+        transition: border-radius 3s ease;
+        margin-top: 20px !important;
+        transition: color 1s ease-out;
+    }
+    
+    .btn btn-success {
+        padding-bottom: 20px !important;
+    }
+    
+    #glyphicon1 {
+        height: 20px;
+    }
+    
+    # glyphicon3 {
+        height: 50px;
+        padding-left: 10px;
+    }
+    
+    .btn-warning {
+        float: right;
+    }
+    
+    .btn-info {
+        margin-bottom: 20px;
+        margin-left: 40px
+    }
+    
+    textarea {
+        width: 500px;
+        height: 170px;
+        font-size: 30px;
+        font-family: 'Merienda', cursive;
+        color: #4A148C !important;
+    }
+    
+    .counter {
+        font-size: 30px;
+        color: #4A148C;
+        font-family: 'Merienda', cursive;
+        display: inline-block;
+        padding: 10px !important
+    }
+    
+    .back {
+        background-color: rgba(255, 255, 255, 0.5);
+        margin-bottom: 50px;
+        padding-left: 20px;
+    }
+    
+    .center {
+        text-align: center;
+        margin-top: 20px;
+        font-family: 'Merienda', cursive;
+        color: #4A148C;
+        !important;
+        font-size: 30px !important;
+        font-weight: bold;
+    }
+    
+    .sous {
+        text-align: center;
+    }
+    
+    .comments {
+        font-family: 'Merienda', cursive;
+        color: #4A148C;
+        !important;
+        font-size: 30px !important;
+        font-weight: bold;
+    }
+    
+    ul {
+        list-style: square;
+    }
+    
+    input {
+        /*            background-color: lightpink !important;*/
+        text-align: center;
+        color: #8E24AA !important;
+        font-size: 30px !important;
+        font-weight: bold;
+        border-color: #AB47BC !important;
+        /*
+            font-family: 'Fredericka the Great',
+     cursive;
+     font-family: 'Niconne',
+     cursive;
+*/
+        font-family: 'Merienda', cursive;
+        height: 50px !important;
+    }

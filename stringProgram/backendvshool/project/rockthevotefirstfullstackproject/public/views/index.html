@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>First full app</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+
+    <!--   <link href="https://fonts.googleapis.com/css?family=Clicker+Script" rel="stylesheet">-->
+    <!--    <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rochester" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Niconne" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Barrio|Cabin+Sketch" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
+
+</head>
+
+<body ng-app="app" ng-controller="controller" ng-init="loaddatas()">
+
+    <div class="container">
+        <li class="sticky-menu__item  item--example-registration is-active">
+            <a href="#registration" class="sticky-menu__link">
+                <img src="https://d2xy5qvxyo4wme.cloudfront.net/web/uploads/2016/01/15190135/icon_info-color.png" alt="" class="sticky-menu__icon">
+
+                <span class="sticky-menu__title">Registration</span>
+            </a>
+        </li>
+        <li class="sticky-menu__item  item--example-registration is-active">
+            <a href="#registration" class="sticky-menu__link">
+                <img src="https://d2xy5qvxyo4wme.cloudfront.net/web/uploads/2016/01/19173439/registration-color.png" alt="" class="sticky-menu__icon">
+
+                <span class="sticky-menu__title">Information</span>
+            </a>
+        </li>
+
+        <li class="sticky-menu__item  item--example-registration is-active">
+            <a href="#registration" class="sticky-menu__link">
+                <img src="https://d2xy5qvxyo4wme.cloudfront.net/web/uploads/2016/01/19173245/insight-color.png">
+
+                <span class="sticky-menu__title">Insight</span>
+            </a>
+        </li>
+        <li class="sticky-menu__item  item--example-registration is-active">
+            <a href="#registration" class="sticky-menu__link">
+                <img src="https://d2xy5qvxyo4wme.cloudfront.net/web/uploads/2016/01/19173650/payment-color.png" alt="" class="sticky-menu__icon">
+
+                <span class="sticky-menu__title">Payment</span>
+            </a>
+        </li>
+        <li class="sticky-menu__item  item--example-registration is-active">
+            <a href="#registration" class="sticky-menu__link">
+                <img src="https://d2xy5qvxyo4wme.cloudfront.net/web/uploads/2016/01/19173742/assess-color.png" alt="" class="sticky-menu__icon">
+
+                <span class="sticky-menu__title">Knowledge</span>
+            </a>
+        </li>
+        <li class="sticky-menu__item  item--example-registration is-active">
+            <a href="#registration" class="sticky-menu__link">
+                <img src="https://d2xy5qvxyo4wme.cloudfront.net/web/uploads/2016/01/19173840/anything-color1.png" alt="" class="sticky-menu__icon">
+
+                <span class="sticky-menu__title">And more</span>
+            </a>
+        </li>
+
+
+        <div class="row">
+            <div class="col-md-12">
+                <pre id="pre1">
+                <b>Rock     The      Vote</b></pre>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <pre id="pre2"><b>*Why  Do  We  Vote?
+                 *Do  People's  Votes  Really  Count?
+                *Why  Do  People  Vote  In  An   Election?
+                *Reasons  Why  People  Vote?</b></pre>
+            </div>
+        </div>
+        <div class="row" id="name">
+            <div class="col-md-4">
+            </div>
+
+            <div class="col-md-4">
+                <input ng-model="name" class="form-control" placeholder="Your Name">
+
+            </div>
+            <div class="col-md-4">
+            </div>
+
+        </div>
+        <div class="row" id="description">
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-4">
+                <input ng-model="description" class="form-control" placeholder="Your Description">
+            </div>
+            <div class="col-md-4">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-3 col-md-offset-1">
+                <button ng-click="post()" id="btn" class="btn btn-info">Post</button>
+            </div>
+            <div class="col-md-4">
+            </div>
+
+        </div>
+        <!--        <div class="row" ng-repeat="item in data track by $index">-->
+        <div class="row" ng-repeat="item in data | orderBy : 'like':true">
+            <div class="col-md-12">
+                <div class="row back">
+                    <div class="center">
+                        <p> {{item.name}}</p>
+                        <p> {{item.description}}</p>
+                    </div>
+                    <textarea ng-model="addCom.comment" placeholder="Comments"></textarea>
+
+                    <button id="btncomment" class="btn-lg" ng-click="addComment(item._id,addCom)"><i class=" glyphicon glyphicon-comment ">
+                        </i>&nbsp;&nbsp;comment
+
+                    </button>
+
+                    <div>
+                        <ul ng-repeat="comments in item.comment track by $index">
+                            <li class="comments">{{comments}}
+                                <button ng-click="deletecom($index)">x</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sous">
+                        <button ng-click="likes(item._id,item.like)" id="btn" class="btn btn-success">
+                            <i id="glyphicon1" class="glyphicon glyphicon-thumbs-up "></i>&nbsp;&nbsp;Like
+
+                        </button>
+                        <div class="counter"> {{item.like}}</div>
+                        <button ng-click="dislike(item._id,item.like)" class="btn btn-danger" id="btn"><i id="glyphicon2" class="glyphicon glyphicon-thumbs-down"></i>&nbsp;&nbsp;Dislike</button>
+                        <button ng-click="delete(item._id)" class="btn btn-warning" id="btn"><i id="glyphicon3" class="glyphicon glyphicon-trash"></i>&nbsp;&nbsp;Delete</button>
+
+                    </div>
+
+
+
+
+                    <!--<button ng-click="refresh($index)" id="btn"><i id="glyphicon2" class="glyphicon glyphicon-refresh "></i>&nbsp;&nbsp;Refresh</button>-->
+
+
+
+
+                </div>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.2/angular.min.js"></script>
+        <script src="/js/app.js"></script>
+</body>
+
+</html>

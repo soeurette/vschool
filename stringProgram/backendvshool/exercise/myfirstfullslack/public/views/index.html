@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>First full app</title>
+    <!--    <link href="/public/css/style.css" rel="stylesheet" type="text/css">-->
+</head>
+
+<body ng-app="app" ng-controller="ctrl" ng-init="loaddatas()">
+    <p> this a data</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1><b>To Do List</b></h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <input ng-model="type" class="form-control">
+                <input ng-model="ammount" class="form-control" type="number">
+
+                <button ng-click="post()" class="btn btn-info">Add</button>
+
+                <div ng-repeat="item in data">
+                    <p> {{item.type}}</p>
+                    <p> {{item.ammount | currency}}</p>
+                    <p> {{item.isFresh}}</p>
+                    <button ng-click="delete(_id)" class="btn btn-info">Delete</button>
+                    <button ng-click="edit(_id,input)" class="btn btn-info">Edit</button>
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.2/angular.min.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+
+</html>

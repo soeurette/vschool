@@ -1,0 +1,118 @@
+body {
+    background-color: #403F47;
+}
+
+h1 {
+    color: white;
+}
+
+p {
+    padding-top: 70px;
+}
+
+@media (max-width: 970px) {}
+
+#row1 {
+    background-color: #3B929C;
+    margin-right: 5px !important;
+    margin-bottom: 5px;
+    color: white;
+    margin-left: 6px;
+}
+
+#boxee {
+    background-color: #4A148C;
+    margin-right: 5px !important;
+    margin-bottom: 5px;
+    color: white;
+}
+
+#boxegreen {
+    background-color: #56B13C;
+    margin-right: 6px !important;
+    margin-bottom: 5px;
+    color: white;
+}
+
+#boxegreen2 {
+    background-color: #56B13C;
+    margin-right: 5px !important;
+    margin-bottom: 5px;
+    color: white;
+}
+
+#free {
+    background-color: transparent;
+}
+
+#boxewoolf {
+    background-color: #FF6E40;
+    margin-right: 6px !important;
+    color: white;
+}
+
+#boxeviolet {
+    background-color: #673AB7;
+    margin-right: 5px !important;
+    margin-bottom: 5px;
+    color: white;
+    margin-left: 20px;
+}
+
+#boxerose {
+    background-color: #880E4F;
+    margin-right: 5px !important;
+    margin-bottom: 5px;
+    color: white;
+}
+
+#boxerose2 {
+    background-color: #880E4F;
+    margin-right: 20px !important;
+    margin-bottom: 5px;
+    color: white;
+}
+
+#boxeblue {
+    background-color: #1A237E;
+    margin-right: 20px !important;
+    margin-bottom: 5px;
+    color: white;
+}
+
+#boxeorange {
+    background-color: #FF3D00;
+    margin-right: 5px !important;
+    margin-bottom: 5px;
+    color: white;
+    margin-left: 20px;
+}
+
+#boxedarkorange {
+    background-color: #B71C1C;
+    margin-right: 10px !important;
+    margin-bottom: 10px;
+    color: white;
+}
+
+#boxesmallorange {
+    background-color: #FF3D00;
+    margin-right: 10px !important;
+    margin-bottom: 10px;
+    color: white;
+}
+
+#row2 {
+    background-color: #880E4F;
+    margin-right: 10px !important;
+    margin-bottom: 10px;
+    color: white;
+    margin-left: 20px;
+}
+
+#row3 {
+    background-color: #880E4F;
+    margin-bottom: 10px;
+    color: white;
+    margin-left: 20px;
+}

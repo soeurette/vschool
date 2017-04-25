@@ -1,0 +1,51 @@
+body{
+    background-color: darkgray;
+}
+.wrapper{
+    text-align: center;
+    margin-top: 10px;
+    background-image: url(pexels-photo-313032.jpeg);
+    height:1300px;
+    border: solid grey 5px;
+    border-radius: 30px;
+    
+    
+    
+}
+
+input{
+    margin-top: 50px;
+    width:100%;
+}
+h1{
+    color:blue;
+}
+.btn-primary{
+    margin-top: 20px;
+}
+img{
+    border: 1px white solid;
+    border-radius: 10px;
+}
+h5{
+    color: grey;
+}
+.block{
+    height: 300px;
+    border: 2px solid white;
+    border-radius: 30px;
+    background-image: url(pexels-photo-219923.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.block input{
+    margin-top: 120px;
+    margin-left: 150px;
+    width : 100%;
+    
+}
+.button1{
+    margin-top: 120px;
+    margin-left: 50px;
+}
